@@ -30,7 +30,6 @@ def member_dataframe(congress='115',chamber="senate"):
                             headers = headers)
     decoded = json.loads(response.text)
     dec = decoded['results'][0]['members']
-    print(dec)
     df = pd.DataFrame.from_dict(dec)
     return df
 
