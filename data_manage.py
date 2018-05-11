@@ -23,6 +23,16 @@ def switch_fs_let(state_fs_num):
     state_fs_let = dict([[v,k] for k,v in state_fs_num.items()])
     return state_fs_let
 
+def bill_month_dataframe(year,month,chamber="senate"):
+    
+    headers = {'X-Api-Key': publica_con_key}
+    response = requests.get("https://api.propublica.org/congress/v1/"+chamber+"/votes/"+year+"/"+month+".json,
+                            headers = headers)
+    decoded = json.loads(response.text)
+    dec = decoded['results']['votes']
+    df = pd.DataFrame.from_dict(dec)
+    return df
+
 def member_dataframe(congress='115',chamber="senate"):
     
     headers = {'X-Api-Key': publica_con_key}
