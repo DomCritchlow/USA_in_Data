@@ -10,14 +10,14 @@ For a snapshot of a fully python front and backend webserver of this project see
 
 ## Main Webpage
 
-![alt text](https://github.com/DomCritchlow/USA_in_Data/tree/master/Presenation_Images/main.png "Main")
+![alt text](Presenation_Images/main.png "Main")
 
 
 
 ## Senate Webpage
 
-![alt text](https://github.com/DomCritchlow/USA_in_Data/tree/master/Presenation_Images/senate_screen.png "Senate")
+![alt text](Presenation_Images/senate_screen.png "Senate")
 
 ## House Webpage
 
-![alt text](https://github.com/DomCritchlow/USA_in_Data/tree/master/Presenation_Images/house_screen.png "House")
+![alt text](Presenation_Images/house_screen.png "House")
